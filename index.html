@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><i class="fa-solid fa-book"></i>Dream BookStore</div>
+                <ul class="nav-links">
+                    <li><a href="#">Manage</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Bestsellers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for books, authors, or genres...">
+            <button>Search</button>
+        </div>
+        
+        <div class="categories">
+            <div class="category active">All Books</div>
+            <div class="category">Fiction</div>
+            <div class="category">Non-Fiction</div>
+            <div class="category">Science</div>
+            <div class="category">History</div>
+            <div class="category">Biography</div>
+        </div>
+        
+        <div class="books-grid">
+            <div class="book-card" data-id="1">
+                <div class="book-image">
+                    <img src="./assets/greatgasby.jpg" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">The Great Gatsby</div>
+                    <div class="book-author">F. Scott Fitzgerald</div>
+                    <div class="book-price">$12.99</div>
+                    <div class="book-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="edit-price">Edit Price</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="book-card" data-id="2">
+                <div class="book-image">
+                    <img src="./assets/killbird.jpg" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">To Kill a Mockingbird</div>
+                    <div class="book-author">Harper Lee</div>
+                    <div class="book-price">$10.99</div>
+                    <div class="book-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="edit-price">Edit Price</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="book-card" data-id="3">
+                <div class="book-image">
+                    <img src="./assets/1984.jpg" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">1984</div>
+                    <div class="book-author">George Orwell</div>
+                    <div class="book-price">$9.99</div>
+                    <div class="book-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="edit-price">Edit Price</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="book-card" data-id="4">
+                <div class="book-image">
+                    <img src="./assets/pride-prejudice-original-imafzra6pfewjjwb.webp" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">Pride and Prejudice</div>
+                    <div class="book-author">Jane Austen</div>
+                    <div class="book-price">$8.99</div>
+                    <div class="book-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="edit-price">Edit Price</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="book-card" data-id="5">
+                <div class="book-image">
+                    <img src="./assets/thehobbit.jpg" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">The Hobbit</div>
+                    <div class="book-author">J.R.R. Tolkien</div>
+                    <div class="book-price">$14.99</div>
+                    <div class="book-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="edit-price">Edit Price</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="book-card" data-id="6">
+                <div class="book-image">
+                    <img src="./assets/frozen.jpg" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">The Frozen River</div>
+                    <div class="book-author">Ariel Lawhon</div>
+                    <div class="book-price">$16.99</div>
+                    <div class="book-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="edit-price">Edit Price</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card" data-id="7">
+                <div class="book-image">
+                    <img src="./assets/silent.jpg" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">The Silent Patient</div>
+                    <div class="book-author">Alex Michaelides</div>
+                    <div class="book-price">$12.45</div>
+                    <div class="book-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="edit-price">Edit Price</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card" data-id="8">
+                <div class="book-image">
+                    <img src="./assets/calamity.jpg" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">A Calamity Of Soul</div>
+                    <div class="book-author">David Baldacci</div>
+                    <div class="book-price">$18.95</div>
+                    <div class="book-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="edit-price">Edit Price</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card" data-id="9">
+                <div class="book-image">
+                    <img src="./assets/daughter.jpg" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">The Good Daughter</div>
+                    <div class="book-author">Karin Slaughter</div>
+                    <div class="book-price">$20.16</div>
+                    <div class="book-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="edit-price">Edit Price</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card" data-id="10">
+                <div class="book-image">
+                    <img src="./assets/fall.jpg" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">Into the Fall: A Thriller</div>
+                    <div class="book-author">Tamara L. Miller</div>
+                    <div class="book-price">$11.55</div>
+                    <div class="book-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="edit-price">Edit Price</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal for price editing -->
+        <div id="price-edit-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Edit Book Price</h2>
+                <div id="modal-book-info"></div>
+                <input type="number" id="new-price" min="0.01" step="0.01" placeholder="Enter new price">
+                <button id="save-price">Save New Price</button>
+                <input type="file" id="import-json" accept=".json" style="display: none;">
+                <div class="json-actions">
+                    <button id="export-json">Export to JSON</button>
+                    <button id="import-json-btn">Import from JSON</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">View Cart</a></li>
+                        <li><a href="#">Order History</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 BookStore. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <div id="books-container" class="books-grid"></div>
+    <script src="main.js"></script>
+</body>
+</html>
