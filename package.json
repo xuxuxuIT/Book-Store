@@ -1,9 +1,10 @@
 {
   "name": "bookstore",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "start": "nodemon --inspect main.js",
+    "start": "nodemon --inspect src/main.js",
+    "watch": "sass --watch src/resources/scss:src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,9 +23,12 @@
   "homepage": "https://github.com/xuxuxuIT/Book-Store#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "sass": "^1.86.0"
   }
 }
